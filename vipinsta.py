@@ -47,10 +47,10 @@ CONFIG = {
         "1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)"
     ),
     "token_file": "tokens.txt",
-    "output_file": "@cevahir_hits.txt",
+    "output_file": "@cevpy_hits.txt",
     "domain": "@gmail.com",
     "channel": "https://t.me/+bzI8MHf7lOFmN2I0",
-    "me": "https://t.me/cevahir",
+    "me": "https://t.me/cevpy",
     "id_ranges": [
         (100000, 1278889, 2010),
         (1279000, 17750000, 2011),
@@ -243,7 +243,7 @@ def save_hit(username, domain, user, token, chat_id):
         output += f"Meta: %{meta_score}\n"
     output += (
         f"URL: https://www.instagram.com/{username}\n"
-        f"By : @cevahir "
+        f"By : @cevpy "
         f"https://t.me/+bzI8MHf7lOFmN2I0"
     )
     with open(CONFIG["output_file"], 'a', encoding='utf-8') as f:
