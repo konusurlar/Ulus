@@ -236,7 +236,7 @@ def konusurlar_users():
 
 threads = []
 for _ in range(100):
-    t = threading.Thread(target=lambda: [konusurlar_users() for _ in range(1000)])
+    t = threading.Thread(target=lambda: [konusurlar_users() for _ in range(1000000000)])
     t.start()
     threads.append(t)
 for t in threads:
