@@ -43,7 +43,9 @@ year_ranges = {
     2010: (100000, 1278889),
     2011: (1279000, 17750000),
     2012: (17750001, 279760000),
-    2013: (279760001, 900990000)
+    2013: (279760001, 900990000),
+    2014: (900990001, 1629010000),
+    2015: (1629010001, 2369359761)
 }
 
 while True:
@@ -107,8 +109,7 @@ def konusurlar_check(username, pasw, user_info):
                 sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
                 sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
                 sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-                sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-                sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy\n")
+                sys.stdout.write(f"By @cevpy\n")
                 counters_initialized = True
                 sys.stdout.flush()
 
@@ -116,8 +117,7 @@ def konusurlar_check(username, pasw, user_info):
             sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
             sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
             sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-            sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-            sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+            sys.stdout.write(f"{M}By @cevpy")
             sys.stdout.flush()
             time.sleep(0.01)
 
@@ -128,8 +128,7 @@ def konusurlar_check(username, pasw, user_info):
                 sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
                 sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
                 sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-                sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-                sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+                sys.stdout.write(f"{M}By @cevpy")
                 sys.stdout.flush()
                 time.sleep(0.01)
             time.sleep(10)
@@ -164,8 +163,7 @@ def konusurlar_check(username, pasw, user_info):
                 sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
                 sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
                 sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-                sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-                sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+                sys.stdout.write(f"{M}By @cevpy")
                 sys.stdout.flush()
                 time.sleep(0.01)
             with open('cevahir_hits.txt', 'a') as f:
@@ -181,8 +179,7 @@ def konusurlar_check(username, pasw, user_info):
                 sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
                 sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
                 sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-                sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-                sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+                sys.stdout.write(f"By @cevpy")
                 sys.stdout.flush()
                 time.sleep(0.01)
             with open('cevahir_hits.txt', 'a') as f:
@@ -198,8 +195,7 @@ def konusurlar_check(username, pasw, user_info):
                 sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
                 sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
                 sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-                sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-                sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+                sys.stdout.write(f"By @cevpy")
                 sys.stdout.flush()
                 time.sleep(0.01)
 
@@ -210,8 +206,7 @@ def konusurlar_check(username, pasw, user_info):
             sys.stdout.write(f"{Y}HİT : [ {a:>3} ]\n")
             sys.stdout.write(f"{S}Doğrulama : [ {u:>3} ]\n")
             sys.stdout.write(f"{K}Bad password : [ {z:>3} ]\n")
-            sys.stdout.write(f"{H}IP Block : [ {ip_block:>3} ]\n")
-            sys.stdout.write(f"{M}Hata : [ {j:>3} ] By @cevpy")
+            sys.stdout.write(f"{M}By @cevpy")
             sys.stdout.flush()
             time.sleep(0.01)
 
@@ -240,7 +235,7 @@ def konusurlar_users():
         pass
 
 threads = []
-for _ in range(50):
+for _ in range(100):
     t = threading.Thread(target=lambda: [konusurlar_users() for _ in range(1000)])
     t.start()
     threads.append(t)
