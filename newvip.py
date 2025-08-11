@@ -29,9 +29,9 @@ RESET = Style.RESET_ALL
 
 VIP_CONFIG = {
     "vip_date_filter": True,
-    "vip_follower_filter": False,
+    "vip_follower_filter": True,
     "vip_post_filter": False,
-    "vip_high_meta": True,
+    "vip_high_meta": False,
     "vip_meta": True,
     "vip_business": False,
     "vip_min_following": False, 
